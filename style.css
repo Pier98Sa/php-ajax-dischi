@@ -37,6 +37,8 @@ main .container .box{
     width: 20%;
     padding: 20px;
 }
+
+/*Card*/
 main .card{
     background-color: #2e3a46;
     display: flex;

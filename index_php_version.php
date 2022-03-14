@@ -1,5 +1,5 @@
 <?php
-
+    include __DIR__ '/./database.php';
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +20,7 @@
 
     <main>
         <div class="container">
-            
+
             <div class="box">
                 <div class="card">
                     <div class="img-card">
