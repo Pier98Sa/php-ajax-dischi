@@ -21,7 +21,7 @@
 
     <main>
         <div class="container d-flex flex-wrap my-5">
-            <div class="row row-cols-xxl-6 row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
+            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
                <!-- <div class="col p-4">
                     <div class="card d-flex flex-column align-items-center">
                         <div class="img-card p-3">
@@ -40,11 +40,11 @@
                 </div> -->
 
                 <?php
-                    foreach($disc as $discs){
+                    foreach($discs as $disc){
                         echo '<div class="col p-4">';
                             echo '<div class="card d-flex flex-column align-items-center">';
                                 echo '<div class="img-card p-3">';
-                                    echo '<img class="img-fluid" src='. $disc['poster'] . 'alt="'.$disc['title']. '">';
+                                    echo '<img class="img-fluid" src='.$disc['poster']. 'alt="'.$disc['title']. '">';
                                 echo '</div>';
 
                                 echo '<div class="info-card pb-2 text-center">';
