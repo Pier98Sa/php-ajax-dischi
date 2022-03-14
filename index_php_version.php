@@ -20,24 +20,8 @@
     </header>
 
     <main>
-        <div class="container d-flex flex-wrap my-5">
+        <div class="container my-5">
             <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
-               <!-- <div class="col p-4">
-                    <div class="card d-flex flex-column align-items-center">
-                        <div class="img-card p-3">
-                            <img class="img-fluid" src="https://www.onstageweb.com/wp-content/uploads/2018/09/bon-jovi-new-jersey.jpg" alt="">
-                        </div>
-
-                        <div class="info-card pb-2 text-center">
-                            <h2 class="text-white pb-2">New Jersey</h2>
-                            <div class="info-album">
-                                <h3>Bon Jovi</h3>
-                                <h3>1988</h3>
-                            </div>
-
-                        </div>
-                    </div>
-                </div> -->
 
                 <?php
                     foreach($discs as $disc){
@@ -48,7 +32,7 @@
                                 echo '</div>';
 
                                 echo '<div class="info-card pb-2 text-center">';
-                                    echo '<h2 class="text-white pb-2 fw-bold text-uppercase fs-3">'. $disc['title'] .'</h2>';
+                                    echo '<h2 class="text-white p-2 fw-bold text-uppercase fs-3">'. $disc['title'] .'</h2>';
                                     echo '<div class="info-album">';
                                         echo '<h3 class="fs-4">'.$disc['author'].'</h3>';
                                         echo '<h3 class="fs-5">'.$disc['year'].'</h3>';

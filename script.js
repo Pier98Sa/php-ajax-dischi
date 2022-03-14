@@ -25,6 +25,7 @@ const root = new Vue(
                 .then((response) => {
                     //popolamento dell'array listaAlbum
                     this.listaAlbum = response.data.response;
+                    
                     //popolamento dell'array listaGeneri
                     this.listaAlbum.forEach((album) => {
                         if(!this.listaGeneri.includes(album.genre)){

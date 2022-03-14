@@ -15,14 +15,17 @@
         <header class="d-flex align-items-center justify-content-between">
             <img src="./img/Spotify_Logo.png" alt="">
 
-            <select class="form-select me-2 w-25" id="Album-Select" v-model="selected">
-                <option value="">Select genre </option>
-                <option v-for="genere in listaGeneri" :value="genere">{{genere}}</option>
-            </select>
+            <div class="input-box me-2">
+                <select class="form-select " id="Album-Select" v-model="selected">
+                    <option value="">Select genre </option>
+                    <option v-for="genere in listaGeneri" :value="genere">{{genere}}</option>
+                </select>
+            </div>
+            
         </header>
     
         <main>
-            <div class="container my-5">
+            <div class="container  my-5">
                 <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
 
                     <div class="col g-4" v-for="album in listaAlbumFiltrati">
@@ -33,10 +36,10 @@
                             </div>
     
                             <div class="info-card pb-2 text-center">
-                                <h2 class="text-white pb-2">{{album.title}}</h2>
+                                <h2 class="text-white p-2 fw-bold text-uppercase fs-3">{{album.title}}</h2>
                                 <div class="info-album">
-                                    <h3>{{album.author}}</h3>
-                                    <h3>{{album.year}}</h3>
+                                    <h3 class="fs-4">{{album.author}}</h3>
+                                    <h3 class="fs-5">{{album.year}}</h3>
                                 </div>
     
                             </div>

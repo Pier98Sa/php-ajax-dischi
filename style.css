@@ -15,6 +15,11 @@ header img{
     padding: 10px;
 }
 
+header .input-box{
+    width: 200px;
+}
+
+
 /*MAIN*/
 main{
     background-color: #1e2d3b;
