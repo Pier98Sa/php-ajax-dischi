@@ -8,9 +8,6 @@
 header{
     background-color: #2e3a46;
     height: 100px;
-    display: flex;
-    align-items: center;
-
 }
 
 header img{
@@ -19,45 +16,17 @@ header img{
 }
 
 /*MAIN*/
-
 main{
     background-color: #1e2d3b;
     height: calc(100vh - 100px);
     overflow-y: auto;
 }
 
-main .container{
-    width: 1280px;
-    margin: 50px auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-main .container .box{
-    width: 20%;
-    padding: 20px;
-}
-
 /*Card*/
 main .card{
     background-color: #2e3a46;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card .img-card{
-    padding: 20px;
-}
-
-.card .img-card img{
-    width: 100%;
-    object-fit: cover;
 }
 
 .card .info-card{
-    text-align: center;
-}
-.card .info-card h2{
-    padding-bottom: 20px;
+    color: #65727b;
 }
