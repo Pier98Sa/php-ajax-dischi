@@ -25,6 +25,7 @@ main{
 /*Card*/
 main .card{
     background-color: #2e3a46;
+    height: 100%;
 }
 
 .card .info-card{

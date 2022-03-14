@@ -41,17 +41,17 @@
 
                 <?php
                     foreach($discs as $disc){
-                        echo '<div class="col p-4">';
+                        echo '<div class="col g-4">';
                             echo '<div class="card d-flex flex-column align-items-center">';
                                 echo '<div class="img-card p-3">';
-                                    echo '<img class="img-fluid" src='.$disc['poster']. 'alt="'.$disc['title']. '">';
+                                    echo '<img class="img-fluid" src='.$disc['poster']. ' '. 'alt="'.$disc['title']. '">';
                                 echo '</div>';
 
                                 echo '<div class="info-card pb-2 text-center">';
-                                    echo '<h2 class="text-white pb-2">'. $disc['title'] .'</h2>';
+                                    echo '<h2 class="text-white pb-2 fw-bold text-uppercase fs-3">'. $disc['title'] .'</h2>';
                                     echo '<div class="info-album">';
-                                        echo '<h3>'.$disc['author'].'</h3>';
-                                        echo '<h3>'.$disc['year'].'</h3>';
+                                        echo '<h3 class="fs-4">'.$disc['author'].'</h3>';
+                                        echo '<h3 class="fs-5">'.$disc['year'].'</h3>';
                                     echo '</div>';   
 
                                 echo '</div>';
