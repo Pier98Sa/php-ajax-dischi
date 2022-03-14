@@ -14,12 +14,19 @@
     <div id="root">
         <header class="d-flex align-items-center justify-content-between">
             <img src="./img/Spotify_Logo.png" alt="">
+
+            <select class="form-select me-2 w-25" id="Album-Select" v-model="selected">
+                <option value="">Select genre </option>
+                <option v-for="genere in listaGeneri" :value="genere">{{genere}}</option>
+            </select>
         </header>
     
         <main>
-            <div class="container d-flex flex-wrap my-5">
+            <div class="container my-5">
                 <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
-                    <div class="col p-4" v-for="album in listaAlbum">
+
+                    <div class="col g-4" v-for="album in listaAlbumFiltrati">
+
                         <div class="card d-flex flex-column align-items-center">
                             <div class="img-card p-3">
                                 <img class="img-fluid" :src="album.poster" :alt="album.title">
@@ -34,17 +41,11 @@
     
                             </div>
                         </div>
+
                     </div>
 
                 </div>
-    
-    
-                
-                
-    
-                
-                
-    
+      
             </div>
     
         </main>
