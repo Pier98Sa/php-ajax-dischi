@@ -19,9 +19,9 @@
         <img src="./img/Spotify_Logo.png" alt="">
     </header>
 
-    <main>
+    <main >
         <div class="container my-5">
-            <div class="row row-cols-xl-5 row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
 
                 <?php
                     foreach($discs as $disc){
