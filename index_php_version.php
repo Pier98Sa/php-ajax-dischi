@@ -19,7 +19,7 @@
         <img src="./img/Spotify_Logo.png" alt="">
     </header>
 
-    <main >
+    <main>
         <div class="container my-5">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
 
@@ -28,7 +28,7 @@
                         echo '<div class="col g-4">';
                             echo '<div class="card d-flex flex-column align-items-center">';
                                 echo '<div class="img-card p-3">';
-                                    echo '<img class="img-fluid" src='.$disc['poster']. ' '. 'alt="'.$disc['title']. '">';
+                                    echo '<img class="img-fluid" src="'.$disc['poster'].'" '. 'alt="'.$disc['title']. '">';
                                 echo '</div>';
 
                                 echo '<div class="info-card pb-2 text-center">';
