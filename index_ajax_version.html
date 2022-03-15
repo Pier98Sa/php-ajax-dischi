@@ -12,9 +12,12 @@
 <body>
     
     <div id="root">
+        <!--Header-->
         <header class="d-flex align-items-center justify-content-between">
+            <!--Logo-->
             <img src="./img/Spotify_Logo.png" alt="">
 
+            <!--Select genre-->
             <div class="input-box me-2">
                 <select class="form-select " id="Album-Select" v-model="selected">
                     <option value="">Select genre </option>
@@ -23,11 +26,13 @@
             </div>
             
         </header>
-    
-        <main v-cloak>
+        
+        <!--Main-->
+        <main >
             <div class="container  my-5">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
 
+                    <!--Stampa dei dischi-->
                     <div class="col g-4" v-for="album in listaAlbumFiltrati">
 
                         <div class="card d-flex flex-column align-items-center">
@@ -53,7 +58,6 @@
     
         </main>
     </div>
-
 
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>

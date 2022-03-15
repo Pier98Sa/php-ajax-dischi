@@ -9,6 +9,7 @@ const root = new Vue(
             api: "http://localhost/php-ajax-dischi/server.php",
         },
         computed: {
+            //filtraggio dei dischi
             listaAlbumFiltrati(){
                 if(this.selected == ""){
                     return this.listaAlbum;

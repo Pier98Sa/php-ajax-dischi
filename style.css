@@ -1,12 +1,10 @@
+/*Common rules*/
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-[v-cloak] {
-    display: none;
-}
 /*HEADER*/
 header{
     background-color: #2e3a46;

@@ -14,15 +14,17 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+    <!--Header-->
     <header class="d-flex align-items-center">
+        <!--Logo-->
         <img src="./img/Spotify_Logo.png" alt="">
     </header>
 
+    <!--Main-->
     <main>
         <div class="container my-5">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-
+                <!--Stampa dei dischi-->
                 <?php
                     foreach($discs as $disc){
                         echo '<div class="col g-4">';
@@ -46,13 +48,6 @@
 
                 
             </div>
-
-
-            
-            
-
-            
-            
 
         </div>
 
